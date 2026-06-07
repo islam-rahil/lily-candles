@@ -100,7 +100,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden"
+          className="absolute top-0 left-0 w-full h-full bg-[#EDE6D6] rounded-[1%] overflow-hidden"
           style={{
             transform: isActive
               ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
@@ -155,7 +155,7 @@ const CarouselControl = ({ type, title, handleClick }: CarouselControlProps) => 
     aria-label={title}
     title={title}
     onClick={handleClick}
-    className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-[3px] border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
+    className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-[3px] border-transparent rounded-full focus:border-[#EDE6D6] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
       type === "previous" ? "rotate-180" : ""
     }`}
   >
@@ -243,7 +243,7 @@ export function Carousel({ slides, autoPlay = 0 }: CarouselProps) {
               onClick={() => goTo(index)}
               className={`h-2 rounded-full transition-all duration-300 ${
                 current === index
-                  ? "w-6 bg-[#6D64F7]"
+                  ? "w-6 bg-[#52592D]"
                   : "w-2 bg-neutral-300 dark:bg-neutral-600 hover:bg-neutral-400"
               }`}
             />
