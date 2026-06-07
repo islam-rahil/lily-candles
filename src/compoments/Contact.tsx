@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="grid w-full grid-cols-1 lg:grid-cols-2">
+    <section id="contact" className="grid w-full grid-cols-1 lg:grid-cols-2">
       {/* Colonne visuelle */}
       <div className="relative min-h-[40vh] lg:min-h-screen overflow-hidden">
         <div className="absolute inset-0">

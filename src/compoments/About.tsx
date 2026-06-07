@@ -5,7 +5,7 @@ import RevealBg from "./RevealBg";
 export default function About() {
   return (
     <RevealBg   bgClassName="bg-[#52592D]/80"
-  fromClassName="bg-[#3a3d1f]/80"
+  fromClassName="bg-[#ffffff]"
   duration={1800}>
       <section
         className="grid grid-cols-1 md:grid-cols-2 items-center"

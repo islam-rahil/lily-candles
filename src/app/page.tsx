@@ -6,6 +6,7 @@ import { AnimatedTestimonials } from "../compoments/Team";
 import Contact from "../compoments/Contact";
 import Reveal from "../compoments/Reveal";
 import RevealBg from "../compoments/RevealBg";
+import Footer from "../compoments/Footer";
 
 const slideData = [
   { title: "Mystic Mountains", button: "Explore Component", src: "/p1.jpeg" },
@@ -20,35 +21,35 @@ const testimonials = [
       "Chaque bougie raconte une histoire. Mon rôle est de composer des fragrances qui éveillent des souvenirs et transforment un simple instant en moment précieux.",
     name: "Leila Benali",
     designation: "Fondatrice & Maître Parfumeur",
-    src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=3560&auto=format&fit=crop",
+    src: "/e1.avif",
   },
   {
     quote:
       "La cire, la mèche, le temps de combustion — rien n'est laissé au hasard. Je veille à ce que chaque pièce qui sort de l'atelier soit irréprochable.",
     name: "Yacine Haddad",
     designation: "Responsable Production & Artisanat",
-    src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=3540&auto=format&fit=crop",
+    src: "/e2.avif",
   },
   {
     quote:
       "Le parfum se ressent aussi par les yeux. Je conçois chaque packaging comme un écrin, pour que l'objet soit aussi beau éteint qu'allumé.",
     name: "Amira Cherif",
     designation: "Directrice Artistique & Design",
-    src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=3540&auto=format&fit=crop",
+    src: "/e3.avif",
   },
   {
     quote:
       "Sélectionner les meilleures cires naturelles et des matières premières durables, c'est ma fierté. La qualité commence par le choix des ingrédients.",
     name: "Karim Mansouri",
     designation: "Responsable Sourcing & Qualité",
-    src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3464&auto=format&fit=crop",
+    src: "/e4.avif",
   },
   {
     quote:
       "Au-delà de la vente, je tisse un lien avec chaque client. Comprendre leurs envies et leur faire découvrir la fragrance parfaite, c'est tout l'art de notre maison.",
     name: "Sofia Belkacem",
     designation: "Responsable Relation Client",
-    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop",
+    src: "/e5.avif",
   },
 ];
 
@@ -58,7 +59,7 @@ export default function Home() {
       <Navbar />
 
       <BackgroundGradientAnimation>
-        <div className="absolute z-50 inset-0 flex flex-col items-center justify-center px-4 text-center pointer-events-none">
+        <div id="top" className="absolute z-50 inset-0 flex flex-col items-center justify-center px-4 text-center pointer-events-none">
           <h1 className="font-ma-police-2 bg-gradient-to-b from-white/90 to-white/40 bg-clip-text text-transparent drop-shadow-2xl text-5xl md:text-7xl lg:text-8xl tracking-wide">
             Leila Candles
           </h1>
@@ -77,7 +78,7 @@ export default function Home() {
         fromClassName="bg-[#52592D]/30"
         duration={2000}
       >
-        <div className="relative overflow-hidden w-full h-full py-20">
+        <div id="collection" className="relative overflow-hidden w-full h-full py-20">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <span className="mb-3 inline-block text-2xl font-ma-police uppercase tracking-[0.2em] text-neutral-400">
               Collection
@@ -99,7 +100,7 @@ export default function Home() {
         fromClassName="bg-[#EDE6D6]"
         duration={1600}
       >
-        <section className="relative overflow-hidden w-full py-20">
+        <section id="equipe" className="relative overflow-hidden w-full py-20">
           <div className="mx-auto mb-16 max-w-2xl text-center px-4">
             <span className="mb-3 inline-block text-2xl font-ma-police uppercase tracking-[0.2em] text-[#794022]/70">
               L'équipe
@@ -118,6 +119,10 @@ export default function Home() {
       {/* Contact : #FFE9D4 → #794022 (à appliquer dans Contact.tsx, voir note) */}
       <Reveal>
         <Contact />
+      </Reveal>
+
+      <Reveal>
+        <Footer/>
       </Reveal>
     </>
   );

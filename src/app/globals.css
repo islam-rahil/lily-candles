@@ -87,3 +87,12 @@ body {
     }
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Décale l'ancre pour ne pas passer sous la navbar fixe (h-20 = 80px) */
+[id] {
+  scroll-margin-top: 6rem;
+}
