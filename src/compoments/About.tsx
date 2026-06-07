@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="bg-[#52592D] grid grid-cols-1 md:grid-cols-2 items-center">
+    <section className="bg-[#52592D] grid grid-cols-1 md:grid-cols-2 items-center" id="About">
       <div className="relative w-full h-[400px] md:h-[600px]">
         <Image
           src="/art1.jpeg"
@@ -34,22 +34,30 @@ export default function About() {
           moments de bien-être, de méditation et de ressourcement.
         </p>
 
-        <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-          <li className="font-ma-police-2 text-sm text-[#EDE6D6]">
-            <span className="block text-[#D8CC34] text-lg font-ma-police-2">100 %</span>
-            Cire naturelle
-          </li>
-          <li className="font-ma-police-2 text-sm text-[#EDE6D6]">
-            <span className="block text-[#D8CC34] text-lg font-ma-police-2">0 %</span>
-            Produits chimiques
-          </li>
-          <li className="font-ma-police-2 text-sm text-[#EDE6D6]">
-            <span className="block text-[#D8CC34] text-lg font-ma-police-2">Fait main</span>
-            En petites séries
-          </li>
-        </ul>
+    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+  <li className="font-ma-police-2 text-sm text-[#EDE6D6]">
+    <span className="block text-[#D8CC34] text-lg font-sans">
+      100 %
+    </span>
+    Cire naturelle
+  </li>
 
-        <button className="inline-flex items-center gap-2 bg-[#D8CC34] text-[#52592D] text-sm uppercase tracking-widest px-8 py-3 font-ma-police hover:bg-[#FFE9D4] transition">
+  <li className="font-ma-police-2 text-sm text-[#EDE6D6]">
+    <span className="block text-[#D8CC34] text-lg font-sans">
+      0 %
+    </span>
+    Produits chimiques
+  </li>
+
+  <li className="font-ma-police-2 text-sm text-[#EDE6D6]">
+    <span className="block text-[#D8CC34] text-lg font-ma-police-2">
+      Fait main
+    </span>
+    En petites séries
+  </li>
+</ul>
+
+        <button className="inline-flex items-center gap-2 bg-[#D8CC34] text-[#52592D] text-sm uppercase tracking-widest px-8 py-3 font-ma-police-2 hover:bg-[#FFE9D4] transition">
           Découvrir nos bougies <span>→</span>
         </button>
       </div>
