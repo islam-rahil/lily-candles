@@ -25,7 +25,7 @@ export default function About() {
             Notre histoire
           </span>
 
-          <h2 className="font-ma-police text-3xl md:text-5xl leading-tight mb-6">
+          <h2 className="font-ma-police-2 text-3xl md:text-5xl leading-tight mb-6">
             À propos de Lily Candles
           </h2>
 

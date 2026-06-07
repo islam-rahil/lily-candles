@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const navLinks = [
-  { label: "Accueil", href: "/" },
+  { label: "Accueil", href: "#top" },
   { label: "À propos", href: "#About" },
   { label: "Nos produits", href: "#collection" },
   { label: "L'équipe", href: "#equipe" },
@@ -13,10 +13,10 @@ const navLinks = [
 ];
 
 const collections = [
-  { label: "Bougies parfumées", href: "#" },
-  { label: "Édition limitée", href: "#" },
-  { label: "Coffrets cadeaux", href: "#" },
-  { label: "Recharges", href: "#" },
+  { label: "Nos produits", href: "#collection" },
+  { label: "L'équipe", href: "#equipe" },
+  { label: "Notre histoire", href: "#About" },
+  { label: "Nous contacter", href: "#contact" },
 ];
 
 export default function Footer() {
@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Marque */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2">
+            <Link href="#top" className="inline-flex items-center gap-2">
               <Image
                 src="/logo.jpeg"
                 alt="Leila Candles"
@@ -41,7 +41,6 @@ export default function Footer() {
               Bougies artisanales en cire d&apos;abeille — lumière douce, parfum
               naturel, façonnées à la main en petites séries.
             </p>
-           
           </div>
 
           {/* Navigation */}
@@ -63,10 +62,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Collections */}
+          {/* Explorer */}
           <div>
             <h3 className="font-ma-police text-xs uppercase tracking-[0.2em] text-[#D8CC34]">
-              Collections
+              Explorer
             </h3>
             <ul className="mt-5 space-y-3">
               {collections.map((item) => (
@@ -100,10 +99,10 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="shrink-0 text-[#D8CC34]" />
-                <a
+                
                   href="mailto:contact@leilacandles.com"
                   className="transition hover:text-[#FFE9D4]"
-                >
+               <a>
                   contact@leilacandles.com
                 </a>
               </li>

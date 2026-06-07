@@ -9,10 +9,10 @@ import RevealBg from "../compoments/RevealBg";
 import Footer from "../compoments/Footer";
 
 const slideData = [
-  { title: "Mystic Mountains", button: "Explore Component", src: "/p1.jpeg" },
-  { title: "Urban Dreams", button: "Explore Component", src: "/p2.jpeg" },
-  { title: "Neon Nights", button: "Explore Component", src: "/p3.jpeg" },
-  { title: "Desert Whispers", button: "Explore Component", src: "/p4.jpeg" },
+  { title: "YLANG YLANG", button: "", src: "/p1.jpeg" },
+  { title: "LAVENDER", button: "", src: "/p2.jpeg" },
+  { title: "ROSE and OUD", button: "", src: "/p4.jpeg" },
+
 ];
 
 const testimonials = [
