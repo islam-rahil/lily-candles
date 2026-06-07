@@ -58,16 +58,19 @@ export default function Home() {
     <>
       <Navbar />
 
-      <BackgroundGradientAnimation>
-        <div id="top" className="absolute z-50 inset-0 flex flex-col items-center justify-center px-4 text-center pointer-events-none">
-          <h1 className="font-ma-police-2 bg-gradient-to-b from-white/90 to-white/40 bg-clip-text text-transparent drop-shadow-2xl text-5xl md:text-7xl lg:text-8xl tracking-wide">
-            layla candles
-          </h1>
-          <p className="mt-4 max-w-xl text-sm md:text-base lg:text-lg text-white/70 font-light tracking-wide font-ma-police-2">
-            Bougies artisanales en cire d&apos;abeille — lumière douce, parfum naturel.
-          </p>
-        </div>
-      </BackgroundGradientAnimation>
+<BackgroundGradientAnimation>
+  <div
+    id="top"
+    className="absolute z-50 inset-0 flex flex-col items-center justify-center px-5 sm:px-6 text-center pointer-events-none"
+  >
+    <h1 className="font-ma-police-2 bg-gradient-to-b from-white/90 to-white/40 bg-clip-text text-transparent drop-shadow-2xl text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.1] tracking-wide">
+      Layla Candles
+    </h1>
+    <p className="mt-4 sm:mt-5 max-w-xs sm:max-w-md md:max-w-xl text-sm sm:text-base lg:text-lg text-white/70 font-light leading-relaxed tracking-wide font-ma-police-2">
+      Bougies artisanales en cire d&apos;abeille — lumière douce, parfum naturel.
+    </p>
+  </div>
+</BackgroundGradientAnimation>
 
       {/* About : fond plein, géré dans le composant (texte clair → pas de révélation) */}
       <About />
