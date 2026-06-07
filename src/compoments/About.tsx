@@ -26,7 +26,7 @@ export default function About() {
           </span>
 
           <h2 className="font-ma-police-2 text-3xl md:text-5xl leading-tight mb-6">
-            À propos de Lily Candles
+            À propos de layla candles
           </h2>
 
           <p className="font-ma-police-2 text-base md:text-lg leading-relaxed text-[#EDE6D6] mb-6">
