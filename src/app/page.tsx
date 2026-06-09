@@ -81,7 +81,7 @@ export default function Home() {
       >
         <div
           id="collection"
-          className="relative overflow-hidden w-full h-full py-12 sm:py-16 lg:py-20"
+          className="relative overflow-hidden w-full h-full py-12 sm:py-20 lg:py-20"
         >
           <div className="mx-auto mb-10 sm:mb-14 lg:mb-16 max-w-2xl px-4 text-center">
             <span className="mb-2 sm:mb-3 inline-block text-lg sm:text-2xl font-ma-police uppercase tracking-[0.2em] text-neutral-400">
